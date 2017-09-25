@@ -19,12 +19,20 @@ public class Kapitel3{
 		area = ra * ra * pi;
 		double Omkrets = ra * 2 * pi;
 		JOptionPane.showMessageDialog(null, Omkrets + "\n" + area);*/
-		String minuter = JOptionPane.showInputDialog(null, "Antal minuter du ringer i m" + a1 +"naden" );
+		
+		/*String minuter = JOptionPane.showInputDialog(null, "Antal minuter du ringer i m" + a1 +"naden" );
 		String priset = JOptionPane.showInputDialog(null, "Hur mycket " + a2 +"r minutpriset?");
 		double m = Double.parseDouble(minuter);
 		double p = Double.parseDouble(priset);
 		double summa = m * p;
-		JOptionPane.showMessageDialog(null, summa);
+		JOptionPane.showMessageDialog(null, summa);*/
+
+		String P = JOptionPane.showInputDialog(null, "Pris?");
+		int Pris = Integer.parseInt(P);
+		int utanmoms = Pris / 5 * 4;
+		int momsen = Pris / 5;
+		JOptionPane.showMessageDialog(null, "Exclusive moms=" + utanmoms + "\nMomsen =" + momsen);
+
 
 	}
 }
