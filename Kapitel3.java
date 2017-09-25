@@ -26,13 +26,19 @@ public class Kapitel3{
 		double p = Double.parseDouble(priset);
 		double summa = m * p;
 		JOptionPane.showMessageDialog(null, summa);*/
-
+		/*
 		String P = JOptionPane.showInputDialog(null, "Pris?");
 		int Pris = Integer.parseInt(P);
 		int utanmoms = Pris / 5 * 4;
 		int momsen = Pris / 5;
-		JOptionPane.showMessageDialog(null, "Exclusive moms=" + utanmoms + "\nMomsen =" + momsen);
+		JOptionPane.showMessageDialog(null, "Exclusive moms=" + utanmoms + "\nMomsen =" + momsen);*/
 
-
+		int tim, min, sek, tid;
+		String tidSek = JOptionPane.showInputDialog(null, "hur m" + a1 + "nga sekunder tog det?");
+		tid = Integer.parseInt(tidSek);
+		tim = tid / 3600;
+		min = (tid - tim * 3600)/60;
+		sek = (tid - tim * 3600- min * 60);
+		JOptionPane.showMessageDialog(null, "Tid = " + tim + ":" + min + ":" + sek);
 	}
 }
